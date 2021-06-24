@@ -1,0 +1,177 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+
+    @media (min-width: 481px) {
+        font-size: 1rem;
+    }
+}
+
+#myBooks {
+    /*principal Div "myBooks"*/
+    @media (min-width: 481px) {
+        margin: 8px;
+    }
+
+    .title {
+        background-color: #e9e7e5;
+        display: flex;
+        align-items: baseline;
+        box-shadow: 0px 6px 6px -6px;
+
+        h1 {
+            font-size: 1.6rem;
+        }
+
+        #logoImg {
+            padding-left: 10px;
+
+            @media (max-width: 480px) {
+                width: 59px;
+                height: 33px;
+            }
+
+            @media (max-width: 801px) and (min-width: 481px) {
+                width: 88px;
+                height: 50px;
+            }
+        }
+    }
+
+    h2 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+
+    #newDiv {
+        #addButton {
+            margin: auto;
+            width: 135px;
+            height: 35px;
+            color: white;
+            border: 1.5px solid #a8d7ca;
+            border-radius: 5px;
+            background-color: #57aaaa;
+            margin-top: 12px;
+        }
+
+        #addButton:hover {
+            border: 3px solid #a3dacb;
+        }
+
+        form {
+            label {
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            input {
+                border: 1px solid   #b5b8b7;
+                box-shadow: 2px 2px 1px #b5b8b7;
+                width: 60%;
+                font-size: 0.9rem;
+            }
+
+            input:hover {
+                border: 1.5px solid #adcac3;
+                box-shadow: 2px 2px 1px #adcac3;
+            }
+
+            @media (min-width: 481px) {
+                text-align: center;
+            }
+        }
+
+        #researchButtons {
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 481px) {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            button {
+                width: 130px;
+                height: 30px;
+                color: white;
+                border-radius: 5px;
+                margin: 12px;
+            }
+
+            #buttonResearch {
+                border: 1px solid #57aaaa;
+                background-color: #57aaaa;
+            }
+
+            #buttonResearch:hover {
+                border: 3px solid #a3dacb;
+            }
+
+            #buttonCancel {
+                border: 1px solid #d35400;
+                background-color: #d35400;
+            }
+
+            #buttonCancel:hover {
+                border: 3px solid #e09d68;
+            }
+        }
+    }
+
+    #books, #contentDiv {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media (min-width: 481px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 802px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .bookResult {
+        background-color: #e4faf5;
+        border: 1px #adcac3 solid;
+        width: auto;
+        text-align: justify;
+        padding: 3%;
+        margin: 3%;
+        font-size: 0.8rem;
+
+        .imageBook {
+            width: 40%;
+            max-width: 100px;
+            height: auto;
+        }
+
+        h3 {
+            text-align: left;
+        }
+
+        .fas {
+            float: right;
+            font-size: 18px;
+        }
+
+        .faClickable {
+            color: blue;
+        }
+
+        .faClickable:hover {
+            color: #12a8ee;
+        }
+
+        .trashIcon {
+            color: red;
+        }
+
+        .trashIcon:hover {
+            color: #eb9636;
+        }
+    }
+}
