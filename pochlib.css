@@ -1,0 +1,118 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem; }
+  @media (min-width: 481px) {
+    * {
+      font-size: 1rem; } }
+
+#myBooks {
+  /*principal Div "myBooks"*/ }
+  @media (min-width: 481px) {
+    #myBooks {
+      margin: 8px; } }
+  #myBooks .title {
+    background-color: #e9e7e5;
+    display: flex;
+    align-items: baseline;
+    box-shadow: 0px 6px 6px -6px; }
+    #myBooks .title h1 {
+      font-size: 1.6rem; }
+    #myBooks .title #logoImg {
+      padding-left: 10px; }
+      @media (max-width: 480px) {
+        #myBooks .title #logoImg {
+          width: 59px;
+          height: 33px; } }
+      @media (max-width: 801px) and (min-width: 481px) {
+        #myBooks .title #logoImg {
+          width: 88px;
+          height: 50px; } }
+  #myBooks h2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem; }
+  #myBooks #newDiv #addButton {
+    margin: auto;
+    width: 135px;
+    height: 35px;
+    color: white;
+    border: 1.5px solid #a8d7ca;
+    border-radius: 5px;
+    background-color: #57aaaa;
+    margin-top: 12px; }
+  #myBooks #newDiv #addButton:hover {
+    border: 3px solid #a3dacb; }
+  #myBooks #newDiv form label {
+    font-weight: bold;
+    font-style: italic; }
+  #myBooks #newDiv form input {
+    border: 1px solid   #b5b8b7;
+    box-shadow: 2px 2px 1px #b5b8b7;
+    width: 60%;
+    font-size: 0.9rem; }
+  #myBooks #newDiv form input:hover {
+    border: 1.5px solid #adcac3;
+    box-shadow: 2px 2px 1px #adcac3; }
+  @media (min-width: 481px) {
+    #myBooks #newDiv form {
+      text-align: center; } }
+  #myBooks #newDiv #researchButtons {
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 481px) {
+      #myBooks #newDiv #researchButtons {
+        flex-direction: row;
+        justify-content: center; } }
+    #myBooks #newDiv #researchButtons button {
+      width: 130px;
+      height: 30px;
+      color: white;
+      border-radius: 5px;
+      margin: 12px; }
+    #myBooks #newDiv #researchButtons #buttonResearch {
+      border: 1px solid #57aaaa;
+      background-color: #57aaaa; }
+    #myBooks #newDiv #researchButtons #buttonResearch:hover {
+      border: 3px solid #a3dacb; }
+    #myBooks #newDiv #researchButtons #buttonCancel {
+      border: 1px solid #d35400;
+      background-color: #d35400; }
+    #myBooks #newDiv #researchButtons #buttonCancel:hover {
+      border: 3px solid #e09d68; }
+  #myBooks #books, #myBooks #contentDiv {
+    display: grid;
+    grid-template-columns: 1fr; }
+    @media (min-width: 481px) {
+      #myBooks #books, #myBooks #contentDiv {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 802px) {
+      #myBooks #books, #myBooks #contentDiv {
+        grid-template-columns: repeat(3, 1fr); } }
+  #myBooks .bookResult {
+    background-color: #e4faf5;
+    border: 1px #adcac3 solid;
+    width: auto;
+    text-align: justify;
+    padding: 3%;
+    margin: 3%;
+    font-size: 0.8rem; }
+    #myBooks .bookResult .imageBook {
+      width: 40%;
+      max-width: 100px;
+      height: auto; }
+    #myBooks .bookResult h3 {
+      text-align: left; }
+    #myBooks .bookResult .fas {
+      float: right;
+      font-size: 18px; }
+    #myBooks .bookResult .faClickable {
+      color: blue; }
+    #myBooks .bookResult .faClickable:hover {
+      color: #12a8ee; }
+    #myBooks .bookResult .trashIcon {
+      color: red; }
+    #myBooks .bookResult .trashIcon:hover {
+      color: #eb9636; }
+
+/*# sourceMappingURL=pochlib.css.map */
