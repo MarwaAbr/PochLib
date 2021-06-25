@@ -17,7 +17,7 @@ addButton.style.display= "block";
 
 var contentDiv = document.createElement("div");       
 let theContent = document.getElementById ("content");
-content.appendChild(contentDiv);
+theContent.appendChild(contentDiv);
 contentDiv.setAttribute ("id", "contentDiv");
 
 verifReload();                                        // Vérifier si la page est Rechargée et récuperation de la session
@@ -59,7 +59,7 @@ if (title!= '' && author!='' ){
   .then(function(res) {
     if (res.ok) {
       return res.json();
-     console.log(res.json);
+    // console.log(res.json);
     }
   })
   .then(function(value) {
@@ -197,7 +197,7 @@ console.log (`this${sectionId}`);
 thisSection= mySection.getAttribute ("id");
 console.log (thisSection);
   sessionStorage.removeItem(thisSection);
-  buttonBook [i].style. color =  "blue" ;
+  
  });
 
 
